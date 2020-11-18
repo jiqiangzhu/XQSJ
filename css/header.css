@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-size: 20px;
+	display: flex;
+	flex-direction: column;
+}
+#header {
+	display: none;
+	width: 7.5rem;
+	height: 1.28rem;
+	flex-direction: column;
+}
+#header .h-top {
+	width: 7.5rem;
+	height: 0.4rem;
+	background-image: url(../img/images/2-选择_01.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: 0 0;
+	background-color: #ff76a8;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 1000;
+}
+#header .h-content {
+	width: 7.5rem;
+	flex: 1;
+	background-image: url(../img/images/2-选择_02.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: 0 0;
+	z-index: 100;
+}

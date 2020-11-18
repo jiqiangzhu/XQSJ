@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>相亲社交APP</title>
+		<meta name="viewport" content="width=750,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/header.css" />
+		<link rel="stylesheet" type="text/css" href="css/tabbar.css" />
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
+		<link rel="stylesheet" type="text/css" href="css/message.css" />
+		<link rel="stylesheet" type="text/css" href="css/myPage.css" />
+		<script src="js/xys.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!-- 
+			header快捷方式： div#header>((.h-top>(.ht-logo+.ht-time+.ht-battery))+(.h-content>(.hc-choose+.hc-moreoption))
+		 -->
+		<div id="header">
+			<div class="h-top"></div>
+			<div class="h-content"></div>
+		</div>
+		<div id="main">
+			<!-- logo -->
+			<div class="logo">
+				<span class="l-relative">找亲家</span>
+				<span class="l-brief">快速帮您的儿子或女儿找到他/她人生的另一半</span>
+			</div>
+			<!-- 
+				1-闪屏 div.flash>div.f-content>span.logo$*2+div.fc-txt
+			 -->
+			<div class="flash">
+				<div class="f-content">
+					<span class="f-logo"></span>
+					<div class="fc-txt">&nbsp;&nbsp;为您的儿子/女儿 找到属于他们的爱情</div>
+					<span class="f-logo"></span>
+				</div>
+			</div>
+
+			<!-- 
+				2-选择 div.choose>(div.c-logo+div.c-person+div.btn)
+			-->
+			<div class="choose">
+
+				<div class="c-person">
+					<div class="p-male"></div>
+					<div class="p-female"></div>
+					<div class="cp-or">
+						<div>or</div>
+					</div>
+				</div>
+				<div class="btn">
+					<button class="cb-male">选女婿</button>
+					<button class="cb-female">选儿媳</button>
+				</div>
+			</div>
+
+			<!-- 
+				3.0-推荐页1&2
+			-->
+			<!-- div.recommend1>(div.r-photo+(div.r-shadow*2)+(div.r-tag>(span.rt$*4))+(div.r-like>(div.rl-no+div.rl-wait+div.rl-yes))) -->
+			<div class="recommend1">
+				<div class="r1-pexels-photo">
+					<div class="r1-photo">
+						<div class="box1">
+							<img src="img/images/3_01_03.png">
+							6
+						</div>
+					</div>
+					<div class="r1-shadow1"></div>
+					<div class="r1-shadow2"></div>
+					<div class="r1-brief">
+						<div class="r1-xmg">小玫瑰</div>
+						<div class="r1-content">28岁/163CM/北京</div>
+						<div class="r1-suitable"><span>80%</span><span>匹配</span></div>
+						<div class="r1-homePage">主页</div>
+						<span class="r1-icon">></span>
+					</div>
+					<div class="r1-pre-btn"></div>
+					<div class="r1-next-btn"></div>
+				</div>
+				<div class="r1-tag">
+					<span>北京户口</span>
+					<span>研究生</span>
+					<span>性格温柔</span>
+					<span>三套房子</span>
+				</div>
+				<div class="r1-like">
+					<div class="r1l-no">
+						<div class="out">
+							<div class="in"></div>
+						</div>
+						<span>不喜欢</span>
+					</div>
+					<div class="r1l-wait">
+						<div class="out">
+							<div class="in"></div>
+						</div>
+						<span>待定</span>
+					</div>
+					<div class="r1l-yes">
+						<div class="out">
+							<div class="in"></div>
+						</div>
+						<span>喜欢</span>
+					</div>
+				</div>
+			</div>
+
+			<!-- 
+				3.1-注册账号1
+				div#register>(btn.register-btn+btn.login-btn + span.r-or+div.r-foot)
+			-->
+			<div class="register">
+				<div class="tuoyuan">
+					<div class="phone-tip">请输入正确的电话号码</div>
+					<div class="reg-box">
+						<div class="r-input-phone">
+							<input type="text" placeholder="请输入您的手机号码">
+							<a href="#">发送验证</a>
+						</div>
+						<div class="r-input-code">
+							<input type="text" placeholder="请输入您的验证码">
+						</div>
+						<button class="register-btn">注册新账号</button>
+						<span class="login-btn">登录已有账号</span>
+						<div class="reg-foot">
+							<span class="r-or">or</span>
+							<div class="r-foot">
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+						<div class="r-bottom">
+							<span>手机验证登录</span><span>忘记密码？</span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- 
+				4-消息
+				div.message>(div.m-nav+(div.m-new>(div.new-list>((div.new-item>((div.new-content>(span.nc-name{空谷幽兰}+span.message-content{我看了您家的闰女，我和儿子都很喜欢..}))+(div.new-right>(span.nr-time{13:40}+span.message-num{3}))))*5)))+(div.m-likes>(div.likes-list>((div.likes-item>((div.likes-content>(span.nc-name{三楼王阿姨}+span.message-content{大后天，我儿子会赶回来，到时一起吃个饭..}))+(div.likes-right>(span.nr-time{16:20}+span.message-num{3}))))*5)))+(div.m-liked>(div.liked-list>((div.liked-item>((div.liked-content>(span.nc-name{沉默是金}+span.message-content{我儿子好像和你女儿是一个大学的呢..}))+(div.liked-right>(span.nr-time{10:30}+span.message-num{3}))))*5))))
+			-->
+			<div class="message">
+				<div class="m-nav">
+					<span class="active">最新</span>
+					<span>我喜欢的</span>
+					<span>喜欢我子女的</span>
+					<span class="line"></span>
+				</div>
+				<div class="m-new">
+					<div class="new-list">
+						<div class="new-item">
+							<div class="new-content"><span class="nc-name">空谷幽兰</span>
+								<span class="message-content">我看了您家的闰女，我和儿子都很喜欢..</span></div>
+							<div class="new-right"><span class="nr-time">13:40</span><span class="message-num">3</span></div>
+						</div>
+						<div class="new-item">
+							<div class="new-content"><span class="nc-name">康斯坦丁</span>
+								<span class="message-content">想和你的闺女去吃个便饭，我叫上我家小子...</span></div>
+							<div class="new-right"><span class="nr-time">12:30</span><span class="message-num">2</span></div>
+						</div>
+						<div class="new-item">
+							<div class="new-content"><span class="nc-name">我儿子好帅</span>
+								<span class="message-content">我看了您家的闰女，我和儿子都很喜欢..</span></div>
+							<div class="new-right"><span class="nr-time">11:20</span>
+								<span class="message-num">1</span></div>
+						</div>
+						<div class="new-item">
+							<div class="new-content"><span class="nc-name">小玫瑰</span>
+								<span class="message-content">你家的小伙子是在哪里上班呢？</span></div>
+							<div class="new-right"><span class="nr-time">10:45</span>
+								<span class="message-num">1</span></div>
+						</div>
+						<div class="new-item">
+							<div class="new-content"><span class="nc-name">波波</span>
+								<span class="message-content">我儿子说您家闰女吸引人了...</span></div>
+							<div class="new-right"><span class="nr-time">08:55</span>
+								<span class="message-num">1</span></div>
+						</div>
+					</div>
+				</div>
+				<div class="m-likes">
+					<div class="likes-list">
+						<div class="likes-item">
+							<div class="likes-content"><span class="nc-name">三楼王阿姨</span><span class="message-content">大后天，我儿子会赶回来，到时一起吃个饭..</span></div>
+							<div class="likes-right"><span class="nr-time">16:20</span><span class="message-num">3</span></div>
+						</div>
+						<div class="likes-item">
+							<div class="likes-content"><span class="nc-name">王老师</span>
+								<span class="message-content">今晚吧，在花园酒店，我叫上我家小子...</span></div>
+							<div class="likes-right"><span class="nr-time">15:16</span>
+								<span class="message-num">2</span></div>
+						</div>
+						<div class="likes-item">
+							<div class="likes-content"><span class="nc-name">李婶</span>
+								<span class="message-content">我看到了您家的闺女，我觉得和我儿子很配..</span></div>
+							<div class="likes-right"><span class="nr-time">14:18</span>
+								<span class="message-num">1</span></div>
+						</div>
+						<div class="likes-item">
+							<div class="likes-content"><span class="nc-name">天河赵大婶</span>
+								<span class="message-content">你家的姑娘是在哪里上班呢？</span></div>
+							<div class="likes-right"><span class="nr-time">10:20</span>
+								<span class="message-num">1</span></div>
+						</div>
+						<div class="likes-item">
+							<div class="likes-content"><span class="nc-name">青青阿姨</span>
+								<span class="message-content">我儿子想和你家闺女见个面..</span></div>
+							<div class="likes-right"><span class="nr-time">08:55</span>
+								<span class="message-num">2</span></div>
+						</div>
+					</div>
+				</div>
+				<div class="m-liked">
+					<div class="liked-list">
+						<div class="liked-item">
+							<div class="liked-content"><span class="nc-name">沉默是金</span>
+								<span class="message-content">我儿子好像和你女儿是一个大学的呢..</span></div>
+							<div class="liked-right"><span class="nr-time">10:30</span>
+								<span class="message-num">3</span></div>
+						</div>
+						<div class="liked-item">
+							<div class="liked-content"><span class="nc-name">玲子妈</span>
+								<span class="message-content">昨天专去看了八字，说非常好，合的很啊..</span></div>
+							<div class="liked-right"><span class="nr-time">09:20</span>
+								<span class="message-num">2</span></div>
+						</div>
+						<div class="liked-item">
+							<div class="liked-content"><span class="nc-name">岁月如歌</span>
+								<span class="message-content">你女儿我真的很喜欢，我儿子很想见见..</span></div>
+							<div class="liked-right"><span class="nr-time">06:10</span>
+								<span class="message-num">3</span></div>
+						</div>
+						<div class="liked-item">
+							<div class="liked-content"><span class="nc-name">蓝色蒲公英</span>
+								<span class="message-content">你家的姑娘是在哪里上班呢？</span></div>
+							<div class="liked-right"><span class="nr-time">10:30</span>
+								<span class="message-num">3</span></div>
+						</div>
+						<div class="liked-item">
+							<div class="liked-content"><span class="nc-name">岁月如歌</span>
+								<span class="message-content">我儿子想和你家闺女见个面.. </span></div>
+							<div class="liked-right"><span class="nr-time">10:30</span>
+								<span class="message-num">3</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="m-chat">
+					<!-- <div class="mc-left">
+						<span class="avator"></span>
+						<span class="m-txt">我看了您家的闰女，我和儿子都很喜欢呢！</span>
+					</div>
+					<div class="mc-left">
+						<span class="avator"></span>
+						<span class="m-txt">今年都32了，还一点也不操心，对事业到是很上心，所以给耽误了。</span>
+					</div>
+					<div class="mc-left">
+						<span class="avator"></span>
+						<span class="m-txt"></span>
+					</div>
+					<div class="mc-left">
+						<span class="avator"></span>
+						<span class="m-txt">好啊，这家餐厅不错，我们今晚见！</span>
+					</div>
+					<div class="mc-right">
+						<span class="m-txt">谢谢！您儿子今年多大啦？</span>
+						<span class="avator"></span>
+					</div>
+					<div class="mc-right">
+						<span class="m-txt">哈哈，我们家闰女也是，一心为了工作，自的事一点也不着急，对了，你儿子在哪上班呢？</span>
+						<span class="avator"></span>
+					</div>
+					<div class="mc-right">
+						<span class="m-txt">要不，今晚我们先见个面</span>
+						<span class="avator"></span>
+					</div> -->
+				</div>
+			</div>
+
+			<!-- div.myPage>((.my-top>(span.my-avator+span.my-editor+.myPage-brief+div.liked+.likes+.wait))+(.my-child-info>(span.c-title+(.c-info-detail>((span+i)*7))))+(.my-child-want>(span.c-title+(.c-info-detail>((span+i)*7))))) -->
+			<div class="myPage">
+				<div class="my-top">
+					<div class="mt-wrapper">
+						<!-- <img src="img/images/4_05.png" > -->
+						<span class="my-avator"></span>
+						<span class="my-editor"></span>
+						<div class="myPage-brief">
+							<span>空谷幽兰</span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span>亲家ID：1235886</span>
+						</div>
+						<div class="my-plat">
+							<div class="liked">
+								10
+								<span>喜欢我的</span>
+							</div>
+							<div class="likes">
+								8
+								<span>我喜欢的</span>
+							</div>
+							<div class="wait">
+								3
+								<span>我待定的</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="my-child-info">
+					<span class="c-title">子女信息</span>
+					<span class="c-editor"></span>
+					<div class="c-info-detail">
+						<div>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<div></div>
+						<div></div>
+						<!-- <span><i></i></span>
+						<span><i></i></span>
+						<span><i></i></span>
+						<span><i></i></span>
+						<span><i></i></span>
+						<span><i></i></span>
+						<span><i></i></span> -->
+					</div>
+				</div>
+				<div class="my-child-want">
+					<span class="c-title">子女配偶意向</span>
+					<div class="c-info-detail">
+						<span><i></i></span>
+						<span><i></i></span>
+						<span><i></i></span>
+						<span><i></i></span>
+						<span><i></i></span>
+						<span><i></i></span>
+						<span><i></i></span>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- 
+				* tab-bar
+			 -->
+			<div class="tab-bar">
+				<div class="tab">
+					<div class="t-icon"></div>
+					<span class="t-txt">推荐</span>
+				</div>
+				<div class="tab">
+					<div class="t-icon"></div>
+					<span class="t-txt">消息</span>
+				</div>
+				<div class="tab">
+					<div class="t-icon"></div>
+					<span class="t-txt">我的</span>
+				</div>
+			</div>
+		</div>
+		<script src="js/main.js" type="module" charset="utf-8"></script>
+	</body>
+</html>

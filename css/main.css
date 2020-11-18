@@ -1,0 +1,524 @@
+#main {
+	height: 13.34rem;
+	width: 7.5rem;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+/*logo*/
+#main .logo {
+	width: 4.91rem;
+	height: 1.81rem;
+	position: absolute;
+	left: 1.3rem;
+	top: 2.2rem;
+	background-image: url(../img/images/2-选择_03.png);
+	background-repeat: no-repeat;
+	background-position: center 0;
+	background-size: 1.06rem 0.91rem;
+	z-index: 1000;
+}
+
+#main .logo .l-relative {
+	/* 字体0.36 * 3 = 1.08 1.06无法显示三个字 */
+	width: 1.08rem;
+	height: 0.34rem;
+	font-family: PingFang-SC-Bold;
+	font-size: 0.36rem;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rem;
+	color: #ff76a8;
+	position: absolute;
+	left: 1.93rem;
+	top: 1.02rem;
+}
+
+#main .logo .l-brief {
+	width: 4.91rem;
+	height: 0.23rem;
+	font-family: PingFang-SC-Medium;
+	font-size: 0.24rem;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rem;
+	color: #aaaaaa;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	display: none;
+}
+
+/*1-闪屏*/
+#main .flash {
+	width: 7.5rem;
+	height: 13.34rem;
+	background-image: url(../img/images/1-闪屏.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 100% 100%;
+}
+
+#main .flash .f-content {
+	width: 4.61rem;
+	height: 0.77rem;
+	position: absolute;
+	left: 1.45rem;
+	top: 9.74rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+#main .flash .f-content .f-logo {
+	width: 0.73rem;
+	height: 0.67rem;
+	/* border: solid 0.02rem #ff76a8; */
+	background-image: url(../img/images/1-闪屏_03.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 100% 100%;
+}
+
+#main .flash .f-content .fc-txt {
+	flex: 1;
+	height: 0.77rem;
+	font-family: PingFang-SC-Regular;
+	font-size: 0.28rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 0.48rem;
+	letter-spacing: 0.06rem;
+	color: #ffffff;
+	opacity: 0.5;
+}
+
+
+/*2-选择*/
+#main .choose {
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+#main .choose .c-person {
+	width: 5.94rem;
+	height: 6.02rem;
+	position: absolute;
+	left: 0.64rem;
+	top: 4.89rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+#main .choose .c-person .p-male {
+	width: 2.23rem;
+	height: 6.02rem;
+	background-image: url(../img/images/2-选择_04.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 100% 100%;
+}
+
+#main .choose .c-person .p-female {
+	width: 1.68rem;
+	height: 5.98rem;
+	background-image: url(../img/images/2-选择_05.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 100% 100%;
+}
+
+#main .choose .c-person .cp-or {
+	width: 0.6rem;
+	height: 0.6rem;
+	border: solid 0.01rem #d9d9d9;
+	border-radius: 0.3rem;
+	position: absolute;
+	left: 2.81rem;
+	top: 1.48rem;
+}
+
+#main .choose .c-person .cp-or div {
+	width: 0.23rem;
+	height: 0.24rem;
+	font-family: PingFang-SC-Medium;
+	font-size: 0.24rem;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rem;
+	color: #aaaaaa;
+	position: absolute;
+	left: 0.19rem;
+	top: 0.13rem;
+}
+
+#main .choose .btn {
+	width: 5.71rem;
+	height: 0.64rem;
+	position: absolute;
+	left: 0.9rem;
+	top: 11.23rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+#main .choose .btn .cb-male,
+.cb-female {
+	width: 2rem;
+	height: 0.64rem;
+	line-height: 0.64rem;
+	font-family: PingFang-SC-Medium;
+	font-size: 0.26rem;
+	font-weight: normal;
+	font-stretch: normal;
+	color: #fff;
+	background-image: linear-gradient(0deg,
+		rgba(0, 0, 0, 0.2) 0%,
+		rgba(255, 255, 255, 0.2) 100%),
+		linear-gradient(#ef387b,
+		#ef387b);
+	background-blend-mode: soft-light,
+		normal;
+	box-shadow: 0rem 0.12rem 0.24rem 0rem rgba(227, 46, 97, 0.24);
+	border-radius: 0.32rem;
+	outline: #1A1A1A;
+	border: none;
+}
+
+.pc {
+	width: 800px;
+	font-size: 60px !important;
+}
+
+.recommend1 {
+	width: 7.5rem;
+	height: 13.34rem;
+	display: none;
+}
+
+.recommend1 .r1-pexels-photo {
+	width: 7.5rem;
+	height: 6.66rem;
+	position: relative;
+	top: 0.79rem;
+	left: 0;
+}
+
+.recommend1 .r1-pexels-photo .r1-photo {
+	width: 6.9rem;
+	height: 6.9rem;
+	background-color: #ffffff;
+	box-shadow: 0rem 0.04rem 0.06rem 0rem rgba(0, 0, 0, 0.04),
+		0rem 0.2rem 0.4rem 0rem rgba(0, 0, 0, 0.08);
+	border-radius: 0.32rem;
+	background-image: url(../img/images/3_05.png);
+	position: absolute;
+	left: 0.3rem;
+	top: 0.77rem;
+	z-index: 100;
+}
+
+.recommend1 .r1-pexels-photo .r1-photo .box1 {
+	width: 1rem;
+	height: 0.59rem;
+	background-color: #ff76a8;
+	border-radius: 0.29rem;
+	opacity: 0.8;
+	position: absolute;
+	left: 0.23rem;
+	top: 0.2rem;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	font-family: PingFang-SC-Medium;
+	font-size: 0.36rem;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rem;
+	color: #ffffff;
+}
+
+.recommend1 .r1-pexels-photo .r1-shadow1 {
+	width: 6.7rem;
+	height: 6.7rem;
+	background-color: #ffffff;
+	box-shadow: 0rem 0.04rem 0.06rem 0rem rgba(0, 0, 0, 0.04),
+		0rem 0.2rem 0.4rem 0rem rgba(0, 0, 0, 0.08);
+	border-radius: 0.32rem;
+	position: absolute;
+	left: 0.4rem;
+	top: 1.07rem;
+	z-index: 10;
+}
+
+.recommend1 .r1-pexels-photo .r1-shadow2 {
+	width: 6.5rem;
+	height: 6.5rem;
+	background-color: #ffffff;
+	box-shadow: 0rem 0.04rem 0.06rem 0rem rgba(0, 0, 0, 0.04),
+		0rem 0.2rem 0.4rem 0rem rgba(0, 0, 0, 0.08);
+	border-radius: 0.32rem;
+	position: absolute;
+	left: 0.5rem;
+	top: 1.37rem;
+	z-index: 1;
+}
+
+.recommend1 .r1-pexels-photo .r1-brief {
+	width: 100%;
+	position: absolute;
+	left: 0.61rem;
+	left: 0.3rem;
+	top: 7.05rem;
+	z-index: 1000;
+	display: flex;
+}
+
+.recommend1 .r1-pexels-photo .r1-brief .r1-xmg {
+	width: 0.72rem;
+	height: 0.23rem;
+	font-family: PingFang-SC-Bold;
+	font-size: 0.24rem;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rem;
+	color: #ff76a8;
+	position: absolute;
+	left: 0.31rem;
+	top: 0;
+}
+
+.recommend1 .r1-pexels-photo .r1-brief .r1-content {
+	width: 2.2rem;
+	height: 0.23rem;
+	font-family: PingFang-SC-Medium;
+	font-size: 0.24rem;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0.01rem;
+	color: #aaaaaa;
+	position: absolute;
+	left: 1.19rem;
+	top: 0;
+}
+
+.recommend1 .r1-pexels-photo .r1-brief .r1-suitable span:nth-child(2) {
+	width: 0.48rem;
+	height: 0.22rem;
+	font-family: PingFang-SC-Bold;
+	font-size: 0.24rem;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rem;
+	color: #999999;
+	position: absolute;
+	left: 5.1rem;
+	top: 0.01rem;
+
+}
+
+.recommend1 .r1-pexels-photo .r1-brief .r1-suitable span:nth-child(1) {
+	width: 0.51rem;
+	height: 0.19rem;
+	font-family: PingFang-SC-Heavy;
+	font-size: 0.24rem;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rem;
+	color: #ff76a8;
+	position: absolute;
+	left: 4.52rem;
+	top: 0.02rem;
+}
+
+.recommend1 .r1-pexels-photo .r1-brief .r1-homePage {
+	width: 0.48rem;
+	height: 0.23rem;
+	font-family: PingFang-SC-Medium;
+	font-size: 0.24rem;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rem;
+	color: #47aff8;
+	position: absolute;
+	left: 5.98rem;
+	top: 0;
+}
+
+.recommend1 .r1-pexels-photo .r1-brief .r1-icon {
+	width: 0.12rem;
+	height: 0.32rem;
+	line-height: 0.32rem;
+	color: #47aff8;
+	font-size: 0.32rem;
+	position: absolute;
+	left: 6.51rem;
+	top: 0.02rem;
+}
+
+.recommend1 .r1-pexels-photo .r1-pre-btn {
+	width: 0.25rem;
+	height: 0.43rem;
+	position: absolute;
+	top: 3.75rem;
+	left: 0.55rem;
+	background-image: url(../img/images/3_01_07.png);
+	background-size: 100% 100%;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	z-index: 1000;
+	cursor: pointer;
+}
+
+.recommend1 .r1-pexels-photo .r1-next-btn {
+	width: 0.25rem;
+	height: 0.43rem;
+	position: absolute;
+	top: 3.75rem;
+	right: 0.55rem;
+	background-image: url(../img/images/3_01_09.png);
+	background-size: 100% 100%;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	z-index: 1000;
+	cursor: pointer;
+}
+
+.recommend1 .r1-tag {
+	width: 5.85rem;
+	height: 0.5rem;
+	position: absolute;
+	top: 9.05rem;
+	left: 0.83rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.recommend1 .r1-tag span {
+	width: 1.3rem;
+	height: 0.5rem;
+	background-blend-mode: soft-light,
+		normal;
+	border-radius: 0.25rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: PingFang-SC-Medium;
+	font-size: 0.24rem;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rem;
+	color: #ffffff;
+}
+
+.recommend1 .r1-tag span:nth-child(1) {
+	background-image: linear-gradient(0deg,
+		rgba(0, 0, 0, 0.3) 0%,
+		rgba(255, 255, 255, 0.3) 100%),
+		linear-gradient(#8bcaea,
+		#8bcaea);
+}
+
+.recommend1 .r1-tag span:nth-child(2) {
+	background-image: linear-gradient(0deg,
+		rgba(0, 0, 0, 0.3) 0%,
+		rgba(255, 255, 255, 0.3) 100%),
+		linear-gradient(#8b88f5,
+		#8b88f5);
+}
+
+.recommend1 .r1-tag span:nth-child(3) {
+	background-image: linear-gradient(0deg,
+		rgba(0, 0, 0, 0.3) 0%,
+		rgba(255, 255, 255, 0.3) 100%),
+		linear-gradient(#f68edc,
+		#f68edc);
+}
+
+.recommend1 .r1-tag span:nth-child(4) {
+	background-image: linear-gradient(0deg,
+		rgba(0, 0, 0, 0.3) 0%,
+		rgba(255, 255, 255, 0.3) 100%),
+		linear-gradient(#ffa04b,
+		#ffa04b);
+}
+
+.recommend1 .r1-like {
+	width: 5.72rem;
+	height: 1.93rem;
+	position: absolute;
+	left: 0.89rem;
+	top: 10.02rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.recommend1 .r1-like>div {
+	width: 1.44rem;
+	height: 1.93rem;
+}
+
+.recommend1 .r1-like .out {
+	width: 1.44rem;
+	height: 1.44rem;
+	background-color: #eeede9;
+	box-shadow: 0rem 0.02rem 0rem 0rem rgba(255, 255, 255, 0.5),
+		inset 0rem 0.01rem 0.04rem 0rem rgba(0, 0, 0, 0.06);
+	border: solid 0.01rem #e2e2e8;
+	border-radius: 0.77rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.recommend1 .r1-like .in {
+	width: 1.1rem;
+	height: 1.1rem;
+	background-color: #ffffff;
+	box-shadow: 0rem 0.02rem 0rem 0rem rgba(0, 0, 0, 0.04),
+		0rem 0.04rem 0.06rem 0rem rgba(0, 0, 0, 0.04),
+		0rem 0.2rem 0.4rem 0rem rgba(0, 0, 0, 0.08);
+	border-radius: 0.55rem;
+}
+
+.recommend1 .r1-like>div {
+	position: relative;
+}
+
+.recommend1 .r1-like>div:nth-child(1) .in {
+	background-image: url(../img/images/3_01_17.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 0.48rem 0.48rem;
+}
+
+.recommend1 .r1-like>div:nth-child(2) .in {
+	background-image: url(../img/images/3_01_14.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 0.48rem 0.48rem;
+}
+
+.recommend1 .r1-like>div:nth-child(3) .in {
+	background-image: url(../img/images/3_01_20.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 0.48rem 0.48rem;
+}
+
+.recommend1 .r1-like>div>span {
+	width: 0.9rem;
+	height: 0.28rem;
+	position: absolute;
+	text-align: center;
+	left: 0.29rem;
+	bottom: 0;
+	font-family: PingFang-SC-Medium;
+	font-size: 0.3rem;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rem;
+	color: #888888;
+}

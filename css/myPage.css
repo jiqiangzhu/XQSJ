@@ -1,0 +1,288 @@
+.myPage {
+	width: 7.5rem;
+	display: none;
+	flex-direction: column;
+}
+
+.myPage .my-top {
+	margin-top: 1.26rem;
+	width: 7.5rem;
+	height: 3.78rem;
+	background-color: #ff76a8;
+	box-shadow: 0rem 0.08rem 0.16rem 0rem rgba(0, 0, 0, 0.05);
+	display: flex;
+	flex-direction: column;
+}
+
+.myPage .my-top .mt-wrapper {
+	width: 6.99rem;
+	height: 3.24rem;
+	margin-top: 0.1rem;
+	display: flex;
+	position: relative;
+}
+
+.myPage .my-top .mt-wrapper .my-avator {
+	width: 1.6rem;
+	height: 1.6rem;
+	background-image: url(../img/images/4_05.png);
+	background-size: 1.6rem 1.6rem;
+	margin-top: 0.3rem;
+	margin-left: 0.33rem;
+}
+
+.myPage .my-top .mt-wrapper .my-editor {
+	width: 0.54rem;
+	height: 0.54rem;
+	background-color: #ff76a8;
+	border: solid 0.04rem #ffffff;
+	position: absolute;
+	border-radius: 0.27rem 0.27rem;
+	left: 1.5rem;
+	top: 0.17rem;
+	background-image: url(../img/images/5-我的_03.png);
+	background-size: 0.22rem 0.22rem;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.myPage .my-top .mt-wrapper .myPage-brief {
+	width: 4.85rem;
+	height: 0.75rem;
+	position: absolute;
+	left: 2.14rem;
+	top: 0.62rem;
+}
+
+.myPage .my-top .mt-wrapper .myPage-brief span:nth-child(1) {
+	width: 1.36rem;
+	height: 0.34rem;
+	font-family: PingFang-SC-Bold;
+	font-size: 0.34rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 0.34rem;
+	letter-spacing: 0rem;
+	color: #fff;
+}
+
+.myPage .my-top .mt-wrapper .myPage-brief span:nth-child(2) {
+	width: 0.41rem;
+	height: 0.31rem;
+	position: absolute;
+	left: 1.43rem;
+	top: 0.01rem;
+	background-image: url(../img/images/5-我的_10.png);
+	background-size: 100% 100%;
+	background-position: 0 0;
+
+}
+
+.myPage .my-top .mt-wrapper .myPage-brief span:nth-child(3) {
+	width: 0.28rem;
+	height: 0.34rem;
+	position: absolute;
+	left: 1.91rem;
+	top: 0.01rem;
+	background-image: url(../img/images/5-我的_07.png);
+	background-size: 100% 100%;
+	background-position: 0 0;
+
+}
+
+.myPage .my-top .mt-wrapper .myPage-brief span:nth-child(4) {
+	position: absolute;
+	right: 0;
+	top: 0.03rem;
+	width: 0.17rem;
+	height: 0.29rem;
+	opacity: 0.5;
+	background-image: url(../img/images/5-我的_13.png);
+}
+
+.myPage .my-top .mt-wrapper .myPage-brief span:nth-child(5) {
+	width: 2.45rem;
+	height: 0.3rem;
+	font-family: PingFang-SC-Medium;
+	font-size: 0.3rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 0.3rem;
+	letter-spacing: 0rem;
+	color: #fff;
+	opacity: 0.6;
+	position: absolute;
+	left: 0.01rem;
+	top: 0.47rem;
+}
+
+.myPage .my-top .mt-wrapper .my-plat {
+	width: 6.17rem;
+	height: 0.9rem;
+	position: absolute;
+	bottom: 0;
+	left: 0.66rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.myPage .my-top .mt-wrapper .my-plat div {
+	width: 1.2rem;
+	height: 0.9rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+	font-family: PingFang-SC-Bold;
+	font-size: 0.48rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 0.48rem;
+	letter-spacing: 0rem;
+	color: #fff;
+}
+
+.myPage .my-top .mt-wrapper .my-plat div span {
+	font-size: 0.3rem;
+	line-height: 0.3rem;
+}
+
+.myPage .my-child-info {
+	width: 6.9rem;
+	height: 4.58rem;
+	background-color: #ffffff;
+	box-shadow: 0rem 0.08rem 0.16rem 0rem rgba(0, 0, 0, 0.05);
+	border-radius: 0.2rem;
+	position: absolute;
+	left: 0.3rem;
+	top: 5.36rem;
+}
+
+.myPage .my-child-info .c-editor {
+	width: 0.62rem;
+	height: 0.62rem;
+	background-color: #ffffff;
+	box-shadow: 0rem 0.08rem 0.16rem 0rem rgba(0, 0, 0, 0.05);
+	position: absolute;
+	right: 0.3rem;
+	top: 0.3rem;
+	border-radius: 0.31rem 0.31rem;
+	background-image: url(../img/images/editor.png);
+	background-size: 0.28rem 0.29rem;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.myPage .my-child-info .c-info-detail {
+	position: absolute;
+	top: 0.89rem;
+	left: 0.39rem;
+}
+
+.myPage .my-child-info .c-info-detail div:nth-child(1) {
+	width: 0.34rem;
+	padding-left: 0.01rem;
+	display: flex;
+	flex-direction: column;
+
+
+
+}
+
+.myPage .my-child-info .c-info-detail div:nth-child(1) span {
+	width: 0.33rem;
+	height: 0.33rem;
+	margin-bottom: 0.15rem;
+	border-radius: 0.5 0.5;
+	/* background-image: url(../img/images/5-我的_29.png); */
+	/* background-size: 0.33rem 0.31rem; */
+}
+
+.myPage .my-child-info .c-info-detail div:nth-child(1) span:nth-child(1) {
+	background-image: url(../img/images/5-我的_29.png);
+	background-size: 0.33rem 0.31rem;
+}
+
+.myPage .my-child-info .c-info-detail div:nth-child(1) span:nth-child(2) {
+	background-image: url(../img/images/5-我的_11.png);
+	background-size: 0.33rem 0.31rem;
+}
+
+.myPage .my-child-info .c-info-detail div:nth-child(1) span:nth-child(3) {
+	background-image: url(../img/images/5-我的_31.png);
+	background-size: 0.33rem 0.31rem;
+}
+
+.myPage .my-child-info .c-info-detail div:nth-child(1) span:nth-child(4) {
+	background-image: url(../img/images/5-我的_16.png);
+	background-size: 0.33rem 0.31rem;
+}
+
+.myPage .my-child-info .c-info-detail div:nth-child(1) span:nth-child(5) {
+	background-image: url(../img/images/5-我的_30.png);
+	background-size: 0.33rem 0.31rem;
+}
+
+.myPage .my-child-info .c-info-detail div:nth-child(1) span:nth-child(6) {
+	background-image: url(../img/images/5-我的_21.png);
+	background-size: 0.33rem 0.31rem;
+}
+
+.myPage .my-child-info .c-info-detail div:nth-child(1) span:nth-child(7) {
+	background-image: url(../img/images/5-我的_23.png);
+	background-size: 0.33rem 0.31rem;
+}
+
+.myPage .my-child-info .c-info-detail div:nth-child(2) {
+	width: 1.03rem;
+	height: 3.23rem;
+	background-image: url(../img/images/5-我的_05.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	left: 0.52rem;
+	top: 0rem;
+}
+
+.myPage .my-child-info .c-info-detail div:nth-child(3) {
+	width: 2.14rem;
+	height: 3.22rem;
+	background-image: url(../img/images/5-我的_32.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	left: 1.78rem;
+	top: 0rem;
+}
+
+
+.myPage .c-title {
+	width: 1.2rem;
+	height: 0.3rem;
+	font-family: PingFang-SC-Bold;
+	font-size: 0.3rem;
+	font-weight: 600;
+	font-stretch: normal;
+	line-height: 0.3rem;
+	letter-spacing: 0rem;
+	color: #222222;
+	position: absolute;
+	left: 0.4rem;
+	top: 0.4rem;
+}
+
+.myPage .my-child-want {
+	width: 6.9rem;
+	height: 3.1rem;
+	background-color: #ffffff;
+	box-shadow: 0rem 0.08rem 0.16rem 0rem rgba(0, 0, 0, 0.05);
+	border-radius: 0.2rem;
+	position: absolute;
+	left: 0.3rem;
+	top: 10.24rem;
+}
+
+.myPage .my-child-want .c-title {
+	width: 1.8rem;
+}

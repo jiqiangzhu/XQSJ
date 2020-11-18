@@ -1,0 +1,516 @@
+.message {
+	width: 7.5rem;
+	height: 13.34rem;
+	display: none;
+	flex-direction: column;
+	background-color: #f3f6f9;
+}
+
+.message .m-nav {
+	width: 7.5rem;
+	height: 0.88rem;
+	/* background-image: url(../img/images/4_02.png); */
+	margin-top: 1.3rem;
+	display: flex;
+	background-color: #fff;
+ 	position: relative;
+	/*z-index: 1000; */
+}
+
+.message .m-nav span {
+	flex: 1;
+	font-family: PingFang-SC-Medium;
+	font-size: 0.3rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 0.48rem;
+	letter-spacing: 0rem;
+	color: #555555;
+	text-align: center;
+	line-height: 0.88rem;
+}
+
+.message .m-nav span.active {
+	color: rgb(255, 118, 168);
+}
+
+.message .m-nav span.line {
+	position: absolute;
+	left: 0rem;
+	bottom: 0;
+	width: 33.33%;
+	height: 0.04rem;
+	border-bottom: 0.04rem solid rgb(255, 118, 168);
+	transition: all 0.5s;
+}
+
+.message .m-new {
+	width: 7.5rem;
+	transition: all .5s;
+}
+
+.message .m-new .new-list {
+	width: 7.5rem;
+	display: flex;
+	flex-direction: column;
+	padding: 0 0.2rem;
+}
+
+.message .new-list .new-item {
+	width: 100%;
+	height: 1.6rem;
+	margin-top: 0.28rem;
+	background-color: #fff;
+	box-shadow: 0rem 0.08rem 0.3rem 0rem rgba(0, 0, 0, 0.08);
+	border-radius: 0.2rem;
+	display: flex;
+	background-size: 1.08rem 1.08rem;
+	background-repeat: no-repeat;
+	background-position: 0.31rem 0.26rem;
+	position: relative;
+}
+
+
+.message .new-list .new-item .new-content {
+	width: 4.19;
+	height: 0.75rem;
+	margin-top: 0.32rem;
+	margin-left: 1.52rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.message .new-list .new-item .new-content .nc-name {
+	font-family: PingFang-SC-Medium;
+	font-size: 0.3rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 0.48rem;
+	letter-spacing: 0rem;
+	color: #555555;
+}
+
+.message .new-list .new-item .new-content .message-content {
+	font-family: PingFang-SC-Medium;
+	font-size: 0.24rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 0.48rem;
+	letter-spacing: 0rem;
+	color: #cccccc;
+}
+
+.message .new-list .new-item:nth-child(1) {
+	background-image: url(../img/images/4_05.png);
+}
+
+.message .new-list .new-item:nth-child(2) {
+	background-image: url(../img/images/4_08.png);
+}
+
+.message .new-list .new-item:nth-child(3) {
+	background-image: url(../img/images/4_10.png);
+}
+
+.message .new-list .new-item:nth-child(4) {
+	background-image: url(../img/images/4_12.png);
+}
+
+.message .new-list .new-item:nth-child(5) {
+	background-image: url(../img/images/4_14.png);
+}
+
+.message .new-list .new-item .new-right {
+	margin-left: 0.52rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	top: 0.46rem;
+	right: 0.27rem;
+}
+
+.message .new-list .new-item .new-right .nr-time {
+	font-family: PingFang-SC-Medium;
+	font-size: 0.24rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 0.48rem;
+	letter-spacing: 0rem;
+	color: #aaaaaa;
+	display: flex;
+	flex-direction: column;
+}
+
+.message .new-list .new-item .new-right .message-num {
+	width: 0.32rem;
+	height: 0.32rem;
+	line-height: 0.32rem;
+	text-align: center;
+	background-color: #f6152a;
+	border-radius: 0.16rem;
+	font-family: PingFang-SC-Medium;
+	font-size: 0.24rem;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rem;
+	color: #ffffff;
+}
+
+/* 我喜欢的 */
+.message .m-likes {
+	width: 7.5rem;
+	transition: all .5s;
+	position: absolute;
+	left: 0;
+	top: 2.18rem;
+	margin-left: -7.5rem;
+
+}
+
+.message .m-likes .likes-list {
+	width: 7.5rem;
+	display: flex;
+	flex-direction: column;
+	padding: 0 0.2rem;
+}
+
+.message .likes-list .likes-item {
+	width: 100%;
+	height: 1.6rem;
+	margin-top: 0.28rem;
+	background-color: #fff;
+	box-shadow: 0rem 0.08rem 0.3rem 0rem rgba(0, 0, 0, 0.08);
+	border-radius: 0.2rem;
+	display: flex;
+	background-size: 1.08rem 1.08rem;
+	background-repeat: no-repeat;
+	background-position: 0.31rem 0.26rem;
+	position: relative;
+}
+
+
+.message .likes-list .likes-item .likes-content {
+	width: 4.19;
+	height: 0.75rem;
+	margin-top: 0.32rem;
+	margin-left: 1.52rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.message .likes-list .likes-item .likes-content .nc-name {
+	font-family: PingFang-SC-Medium;
+	font-size: 0.3rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 0.48rem;
+	letter-spacing: 0rem;
+	color: #555555;
+}
+
+.message .likes-list .likes-item .likes-content .message-content {
+	font-family: PingFang-SC-Medium;
+	font-size: 0.24rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 0.48rem;
+	letter-spacing: 0rem;
+	color: #cccccc;
+}
+
+.message .likes-list .likes-item:nth-child(1) {
+	background-image: url(../img/images/4_05.png);
+}
+
+.message .likes-list .likes-item:nth-child(2) {
+	background-image: url(../img/images/4_08.png);
+}
+
+.message .likes-list .likes-item:nth-child(3) {
+	background-image: url(../img/images/4_10.png);
+}
+
+.message .likes-list .likes-item:nth-child(4) {
+	background-image: url(../img/images/4_12.png);
+}
+
+.message .likes-list .likes-item:nth-child(5) {
+	background-image: url(../img/images/4_14.png);
+}
+
+.message .likes-list .likes-item .likes-right {
+	margin-left: 0.52rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	top: 0.46rem;
+	right: 0.27rem;
+}
+
+.message .likes-list .likes-item .likes-right .nr-time {
+	font-family: PingFang-SC-Medium;
+	font-size: 0.24rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 0.48rem;
+	letter-spacing: 0rem;
+	color: #aaaaaa;
+	display: flex;
+	flex-direction: column;
+}
+
+.message .likes-list .likes-item .likes-right .message-num {
+	width: 0.32rem;
+	height: 0.32rem;
+	line-height: 0.32rem;
+	text-align: center;
+	background-color: #f6152a;
+	border-radius: 0.16rem;
+	font-family: PingFang-SC-Medium;
+	font-size: 0.24rem;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rem;
+	color: #ffffff;
+}
+
+/* 我喜欢的 */
+.message .m-liked {
+	width: 7.5rem;
+	transition: all .5s;
+	position: absolute;
+	left: 0;
+	top: 2.18rem;
+	margin-left: -15rem;
+
+}
+
+.message .m-liked .liked-list {
+	width: 7.5rem;
+	display: flex;
+	flex-direction: column;
+	padding: 0 0.2rem;
+}
+
+.message .liked-list .liked-item {
+	width: 100%;
+	height: 1.6rem;
+	margin-top: 0.28rem;
+	background-color: #fff;
+	box-shadow: 0rem 0.08rem 0.3rem 0rem rgba(0, 0, 0, 0.08);
+	border-radius: 0.2rem;
+	display: flex;
+	background-size: 1.08rem 1.08rem;
+	background-repeat: no-repeat;
+	background-position: 0.31rem 0.26rem;
+	position: relative;
+}
+
+
+.message .liked-list .liked-item .liked-content {
+	width: 4.19;
+	height: 0.75rem;
+	margin-top: 0.32rem;
+	margin-left: 1.52rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.message .liked-list .liked-item .liked-content .nc-name {
+	font-family: PingFang-SC-Medium;
+	font-size: 0.3rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 0.48rem;
+	letter-spacing: 0rem;
+	color: #555555;
+}
+
+.message .liked-list .liked-item .liked-content .message-content {
+	font-family: PingFang-SC-Medium;
+	font-size: 0.24rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 0.48rem;
+	letter-spacing: 0rem;
+	color: #cccccc;
+}
+
+.message .liked-list .liked-item:nth-child(1) {
+	background-image: url(../img/images/4_05.png);
+}
+
+.message .liked-list .liked-item:nth-child(2) {
+	background-image: url(../img/images/4_08.png);
+}
+
+.message .liked-list .liked-item:nth-child(3) {
+	background-image: url(../img/images/4_10.png);
+}
+
+.message .liked-list .liked-item:nth-child(4) {
+	background-image: url(../img/images/4_12.png);
+}
+
+.message .liked-list .liked-item:nth-child(5) {
+	background-image: url(../img/images/4_14.png);
+}
+
+.message .liked-list .liked-item .liked-right {
+	margin-left: 0.52rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	top: 0.46rem;
+	right: 0.27rem;
+}
+
+.message .liked-list .liked-item .liked-right .nr-time {
+	font-family: PingFang-SC-Medium;
+	font-size: 0.24rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 0.48rem;
+	letter-spacing: 0rem;
+	color: #aaaaaa;
+	display: flex;
+	flex-direction: column;
+}
+
+.message .liked-list .liked-item .liked-right .message-num {
+	width: 0.32rem;
+	height: 0.32rem;
+	line-height: 0.32rem;
+	text-align: center;
+	background-color: #f6152a;
+	border-radius: 0.16rem;
+	font-family: PingFang-SC-Medium;
+	font-size: 0.24rem;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0rem;
+	color: #ffffff;
+}
+
+
+.message .m-chat {
+	width: 7.14rem;
+	display: none;
+	flex-direction: column;
+	position: absolute;
+	top: 2.18rem;
+	left: 0.21rem;
+	margin-bottom: 0.98rem;
+	background-color: #F3F6F9;
+}
+
+.message .m-chat .mc-left {
+	width: 6.76rem;
+	align-self: flex-start;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-top: 0.28rem;
+	position: relative;
+}
+
+.message .m-chat .mc-left .avator {
+	width: 0.81rem;
+	height: 0.64rem;
+	border-radius: 0.32rem;
+	background-image: url(../img/images/4_05.png);
+	background-size: 0.64rem 0.64rem;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	position: absolute;
+	left: 0.09rem;
+	top: 0;
+}
+
+.message .m-chat .mc-left .m-txt {
+	background-color: #ffffff;
+	box-shadow: 0rem 0.1rem 0.24rem 0rem rgba(0, 0, 0, 0.05);
+	border-radius: 0.04rem 0.24rem 0.24rem 0.24rem;
+	font-family: PingFang-SC-Medium;
+	font-size: 0.24rem;
+	padding: 0.32rem 0.27rem 0.36rem 0.2rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 0.4rem;
+	letter-spacing: 0rem;
+	color: #555555;
+	margin-left: 0.93rem;
+}
+
+.message .m-chat .mc-left:nth-child(6) .m-txt {
+	width: 2.9rem;
+	height: 2.18rem;
+	background-color: #ffffff;
+	box-shadow: 0rem 0.1rem 0.24rem 0rem rgba(0, 0, 0, 0.05);
+	border-radius: 0.04rem 0.24rem 0.24rem 0.24rem;
+	background-image: url(../img/images/4_01_03.png);
+
+}
+
+/*消息右边*/
+
+.message .m-chat .mc-right {
+	width: 6.76rem;
+	align-self: flex-end;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin-top: 0.28rem;
+	position: relative;
+}
+
+.message .m-chat .mc-right .avator {
+	width: 0.81rem;
+	height: 0.64rem;
+	border-radius: 0.32rem;
+	/* margin-right: 0.09rem; */
+	background-image: url(../img/images/4_05.png);
+	background-size: 0.64rem 0.64rem;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	position: absolute;
+	right: 0.09rem;
+	top: 0;
+}
+
+.message .m-chat .mc-right .m-txt {
+	background-color: #ffffff;
+	box-shadow: 0rem 0.1rem 0.24rem 0rem rgba(0, 0, 0, 0.05);
+	border-radius: 0.24rem 0.04rem 0.24rem 0.24rem;
+	font-family: PingFang-SC-Medium;
+	font-size: 0.24rem;
+	padding: 0.32rem 0.27rem 0.36rem 0.2rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 0.4rem;
+	letter-spacing: 0rem;
+	color: #555555;
+	margin-right: 1rem;
+	background-color: #ff76a8;
+	color: #fff;
+}
+
+.message .m-chat .mc-right:nth-child(3) .m-txt {
+	width: 2.9rem;
+	height: 2.18rem;
+	background-color: #ffffff;
+	box-shadow: 0rem 0.1rem 0.24rem 0rem rgba(0, 0, 0, 0.05);
+	border-radius: 0.04rem 0.24rem 0.24rem 0.24rem;
+
+	background-image: url(../img/images/4_01_03.png);
+
+}
+
+
+.message .m-chat .mc-right {
+	width: 6rem;
+	align-self: flex-end;
+}

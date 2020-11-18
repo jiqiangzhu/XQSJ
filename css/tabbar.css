@@ -1,0 +1,52 @@
+.tab-bar {
+	width: 7.5rem;
+	height: 0.98rem;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	flex-direction: row;
+	background-color: #fff;
+	display: none;
+}
+.tab-bar .tab {
+	width: 2.5rem;
+	height: 0.98rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.tab-bar .tab .t-icon {
+	width: 0.44rem;
+	height: 0.45rem;
+	margin-top: 0.15rem;
+	/* margin: 0.15rem 1.01rem 0.38rem 1.05rem; */
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.tab-bar .tab:nth-child(1) .t-icon {
+	background-image: url(../img/images/3-底部_03.png);
+}
+.tab-bar .tab:nth-child(2) .t-icon {
+	background-image: url(../img/images/3-底部_05.png);
+}
+.tab-bar .tab:nth-child(3) .t-icon {
+	background-image: url(../img/images/3-底部_07.png);
+	/* background-image: url(../img/images/5-我的_19.png); */
+}
+
+.tab-bar .tab:nth-child(1) .t-txt{
+	color: #ed4574;
+}
+
+.tab-bar .tab .t-txt{
+	width: 0.4rem;
+	height: 0.2rem;
+	font-family: PingFang-SC-Medium;
+	font-size: 0.2rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 0.2rem;
+	letter-spacing: 0rem;
+	color: #c5c9cb;
+	margin-top: 0.1rem;
+}
